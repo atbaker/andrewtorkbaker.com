@@ -32,10 +32,17 @@ The site automatically deploys to GitHub Pages via GitHub Actions when you push 
 
 To use your custom domain `andrewtorkbaker.com`:
 
-1. In Cloudflare DNS settings, add a CNAME record:
-   - Type: CNAME
-   - Name: @ (or your subdomain)
-   - Target: `<your-github-username>.github.io`
+1. In Cloudflare DNS settings, add the following records:
+   - **A records** pointing to GitHub Pages IPs:
+     - `185.199.108.153`
+     - `185.199.109.153`
+     - `185.199.110.153`
+     - `185.199.111.153`
+   - **AAAA records** (IPv6) pointing to:
+     - `2606:50c0:8000::153`
+     - `2606:50c0:8001::153`
+     - `2606:50c0:8002::153`
+     - `2606:50c0:8003::153`
    - Proxy status: Proxied (orange cloud)
 
 2. In GitHub repository Settings → Pages → Custom domain, enter `andrewtorkbaker.com` and save
@@ -62,11 +69,12 @@ To use your custom domain `andrewtorkbaker.com`:
         └── deploy.yml  # GitHub Actions deployment workflow
 ```
 
-## Creating PDF Resume
+## Updating Resume PDF
 
-To generate a PDF version of your resume:
+When you update the resume content in `resume.html`, regenerate the PDF:
 
 1. Run the dev server: `npm run dev`
 2. Open `http://localhost:5173/resume.html` in your browser
 3. Use the browser's "Print to PDF" feature (⌘+P on Mac, Ctrl+P on Windows)
-4. The print stylesheet will automatically optimize the layout for PDF export
+4. Save the PDF as `public/Andrew Tork Baker - Resume.pdf` (replacing the existing file)
+5. The print stylesheet will automatically optimize the layout to fit on 2 pages
