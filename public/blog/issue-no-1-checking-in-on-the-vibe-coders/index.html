@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Issue no. 1: Checking in on the vibe coders | Andrew Tork Baker</title>
+    <meta name="description" content="Welcome to issue no. 1 of the Implausible AI newsletter!" />
+    <link rel="canonical" href="https://andrewtorkbaker.com/blog/issue-no-1-checking-in-on-the-vibe-coders/" />
+    <meta property="og:title" content="Issue no. 1: Checking in on the vibe coders" />
+    <meta property="og:description" content="Welcome to issue no. 1 of the Implausible AI newsletter!" />
+    <meta property="og:url" content="https://andrewtorkbaker.com/blog/issue-no-1-checking-in-on-the-vibe-coders/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://andrewtorkbaker.com/blog/media/issue-no-1-checking-in-on-the-vibe-coders-1.png" />
+    <meta property="article:published_time" content="2025-09-09" />
+    <link rel="stylesheet" href="/blog/archive.css" />
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Breadcrumb"><a href="/">Andrew Tork Baker</a> / <a href="/blog/">Blog</a></nav>
+      <article>
+        <header>
+          <p class="byline">Andrew Tork Baker · <time datetime="2025-09-09">September 9, 2025</time></p>
+          <h1>Issue no. 1: Checking in on the vibe coders</h1>
+          <p class="archive-note">From the Implausible AI newsletter archive. Signup and reply instructions are historical.</p>
+        </header>
+        <figure>
+        <img
+            src="/blog/media/issue-no-1-checking-in-on-the-vibe-coders-1.png"
+            width="2000"
+            height="1159"
+            alt="Issue no. 1: Checking in on the vibe coders"
+        >
+            <figcaption><span style="white-space:pre-wrap">Loveable's most-upvoted community project this month</span></figcaption>
+    </figure>
+        <div class="post-body">
+          <p>Welcome to issue no. 1 of the Implausible AI newsletter!</p>
+          <p><strong>I’m Andrew Baker. </strong><a href="https://www.linkedin.com/in/andrewtorkbaker/?ref=implausible.ai"><strong>I’m a software engineer, founder, and executive</strong></a><strong>.</strong> These days I wear lots of hats, but one thread runs through all of them: making sense of AI, and the ways it will change how software is built and sold (and what “software” will mean, for that matter).</p>
+          <p>Refining my own point of view on AI has been critical for me as a founder and a consultant. My goal with this newsletter is to help you refine yours.</p>
+          <p>Each weekly issue will start off with a handful of recent links to reporting / tools / data I found insightful. Then I’ll dive deep into a specific AI topic, bringing you my own analysis for where we are today and where we might be headed next.</p>
+          <p>I’d love your thoughts on issue no. 1. Reply to this email or shoot me a note at andrew@implausible.ai.</p>
+          <p>Issue no. 1 is all about vibe coding, the vibe coders, and the companies in the cutthroat race to serve them. Let’s dive in!</p>
+          <h2 id="andrew’s-picks">Andrew’s picks</h2>
+          <p>A handful of insightful links which earned a spot in my notes this week:</p>
+          <h3 id="a-prompt-injection-attack-written-in-invisible-ink">A prompt injection attack written in invisible ink</h3>
+          <p>I loved <a href="https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/?ref=implausible.ai">this report from two security researchers who delivered malicious prompts to AI chatbots</a> by hiding them inside seemingly-normal images.</p>
+          <p>How it works: the prompts are invisible in the image’s original resolution but reveal themselves when the image is scaled down to make it ready for the LLM. A fun new reason learn about <a href="https://en.wikipedia.org/wiki/Steganography?ref=implausible.ai">steganography</a>.</p>
+          <h3 id="openai-launches-agentsmd-to-standardize-end-user-instructions-for-coding-agents"><strong>OpenAI launches AGENTS.md to standardize end-user instructions for coding agents</strong></h3>
+          <p>As someone who tries a lot of AI coding tools, I welcome <a href="https://agents.md/?ref=implausible.ai">this attempt at a vendor-agnostic standard</a> for engineers to provide project-wide instructions to their coding agents.</p>
+          <p>Despite the growing list of logos, don’t hold your breath waiting for Anthropic to get onboard. Claude Code still has the mindshare lead, perhaps best illustrated by a quick GitHub search: <a href="https://github.com/search?q=path%3A**%2Fclaude.md&type=code&ref=advsearch">104k public repos have a CLAUDE.md</a> vs. <a href="https://github.com/search?q=path%3A**%2Fagents.md&type=code&ref=advsearch">13k for AGENTS.md</a>. But thankfully, it looks like <a href="http://agents.md/?ref=implausible.ai">AGENTS.md</a> has enough other brands onboard to avoid the fate foretold in <a href="https://xkcd.com/927/?ref=implausible.ai">this xkcd classic</a>.</p>
+          <h3 id="inference-ain’t-easy"><strong>Inference ain’t easy!</strong></h3>
+          <p>Crafting next-gen AI models is no small feat. These past few weeks gave us good reminders that operating them at scale is no cakewalk either.</p>
+          <p>If you tried OpenAI’s much-anticipated gpt-oss model on launch day last month, it turned out <a href="https://simonwillison.net/2025/Aug/15/inconsistent-performance/?ref=implausible.ai">your choice of inference provider mattered a lot</a>. Not long after, <a href="https://status.anthropic.com/incidents/h26lykctfnsz?ref=implausible.ai">Anthopic’s top models quietly got a little dumber for a few days</a> because of a bug in their own inference stack.</p>
+          <p>Both these examples were resolved quickly. But it’s a good reminder that operating these models is still just plain hard, even for the pros. One of many reasons I advise against running your own inference stack unless you’ve got bona fide AI engineering talent on your team.</p>
+          <h3 id="open-models-reason-less-efficiently-than-their-closed-counterparts"><strong>Open models reason less efficiently than their closed counterparts</strong></h3>
+          <p>I really liked <a href="https://nousresearch.com/measuring-thinking-efficiency-in-reasoning-models-the-missing-benchmark/?ref=implausible.ai">this post from Nous Research last month</a> examining how open vs. closed models compare in their reasoning efficiency.</p>
+          <p>Besides the technical details, it’s interesting to consider the incentives here: when open model providers ship a model which reasons inefficiently they don’t pay for those extra tokens, you do. Closed model providers, who operate their own inference infrastructure, have more incentive to strike the right balance and keep you a happy customer. Open model providers, on the other hand, probably care more about eking out a few additional points in the benchmarks via extended reasoning.</p>
+          <h3 id="“happiness-smiles-minus-frowns”"><strong>“Happiness = smiles minus frowns”</strong></h3>
+          <p>Apple co-founder Steve Wozniak chimed in on Slashdot with <a href="https://slashdot.org/comments.pl?ref=implausible.ai">his answer to life, the universe, and everything</a>. A refreshing take in an era <a href="https://www.theinformation.com/articles/ai-forces-silicon-valley-confront-moment-ecstasy-agony?rc=jngutp&shared=7550fcd961f0ca17&ref=implausible.ai">increasingly defined by founder paranoia</a>.</p>
+          <h2 id="checking-in-on-the-vibe-coders">Checking in on the vibe coders</h2>
+          <p>What’s the most economically valuable task someone can use an LLM for today?</p>
+          <p>Consumers’ answers might vary, but ask 100 people inside the tech industry and I think you would see a clear majority respond with the same answer: writing code.</p>
+          <p>2025 has marked a turning point for AI-assisted coding tools. After trying so many myself these past few years, I have certainly witnessed it firsthand. When I used last year’s tools and models, it often felt like pair programming with an eager, novice engineer. I wondered sometimes how much I should attribute the modest productivity gains to my new tool’s capabilities vs. <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging?ref=implausible.ai">its role as my rubber duck</a>.</p>
+          <p>Fast forward to 2025. When I use <a href="https://www.anthropic.com/claude-code?ref=implausible.ai">Claude Code</a> or <a href="https://cursor.com/?ref=implausible.ai">Cursor</a> with today’s models, I feel less like I’m babysitting an intern and more like I’m managing a professional engineer.</p>
+          <p>There remain a ton of caveats, to be sure. The tools still thrive in greenfield projects vs. larger codebases. They can all search the web and reference up-to-date technical documentation, but remain biased towards their dated, pre-trained knowledge of a particular language, framework, or dependency. And they’re prone to implementing hacky workarounds when things don’t go according to plan, <a href="https://openai.com/index/why-language-models-hallucinate/?ref=implausible.ai">a quality tied to LLMs’ inherent difficulty in saying “I don’t know.”</a></p>
+          <p>Since it’s well-established, however, that writing code can be pretty lucrative, LLMs’ newfound competence this year has shed new light on a fascinating question:</p>
+          <p><strong>If an AI coding agent can author reasonable-quality code without close supervision, what’s the best way to put it work?</strong></p>
+          <p>From where I stand, we seem to be heading down two parallel paths when it comes to authoring software with AI coding agents:</p>
+          <ul><li><strong>“vibe coding”</strong> - Do the work synchronously and iteratively. Closely supervised by a human, but not necessarily a professional engineer</li><li><strong>“wide coding”</strong> (my term) - Do the work asynchronously and in parallel. Orchestrated by an engineer, but each agent is not closely monitored</li></ul>
+          <p>Next week’s issue will be about “wide coding.” Today, we’re checking in on the state of “vibe coding.”</p>
+          <h3 id="the-vibes-today"><strong>The vibes today</strong></h3>
+          <p>One obvious way to get value out of AI coding tools that don’t need close supervision from a professional engineer is… to use them without a professional engineer. And if that’s your goal, boy do you have options!</p>
+          <p><a href="https://x.com/karpathy/status/1886192184808149383?ref=implausible.ai">Andrej Karpathy was using Cursor when he coined the term “vibe coding” in a February tweet</a>, describing the technique of authoring software primarily through natural language. And while <a href="https://simonwillison.net/2025/Mar/19/vibe-coding/?ref=implausible.ai">professional engineers can and still do “vibe code”</a>, today the term is most often used to describe building software with tools like <a href="https://lovable.dev/?ref=implausible.ai">Lovable</a>, <a href="https://replit.com/?ref=implausible.ai">Replit</a>, <a href="https://bolt.new/?ref=implausible.ai">Bolt</a>, or <a href="https://v0.app/?ref=implausible.ai">Vercel’s v0</a>. Services like these aim to be a one-stop shop which anyone can use to build and deploy software.</p>
+          <p>With the latest models at their disposal and their own tooling refinements, these services can now make a stronger claim to their users that, with some effort, you’ll be able to bring your product vision to life. <strong>But how close is that horizon? And for what kind of product?</strong></p>
+          <p>Based on my experience I’ve seen these tools do best at prototyping an idea, which becomes valuable as a high-fidelity mockup. I ran a half-day AI hackathon for a Product team which had Lovable licenses. One PM was a Lovable early adopter and had already implemented the company’s brand guidelines as a Lovable component library. That helped the whole team create more interesting and valuable prototypes that day.</p>
+          <p>At that same hackathon, I offered to pair program with any participant curious to try to make a contribution to their production codebase. None of them took me up on it, not even to make a website copy change. Maybe that’s because they (wisely) knew it would still be an uphill climb, or maybe it’s because vibe coding a prototype is just more fun. But it was my first personal data point for an important question:</p>
+          <p>How much of this market will be employees building prototypes and small internal tools vs. entrepreneurs building software for their customers?</p>
+          <h3 id="so-how-are-the-vibe-coders-doing"><strong>So how are the vibe coders doing?</strong></h3>
+          <p>For the latter group of aspiring entrepreneurs, all it takes is one visit to <a href="https://www.reddit.com/r/vibecoding/?ref=implausible.ai">r/vibecoding</a> to see they’re not having a great time. <a href="https://www.reddit.com/r/vibecoding/comments/1mu6t8z/whats_the_point_of_vibe_coding_if_i_still_have_to/?ref=implausible.ai">This specific post recently made the rounds</a>. When it comes to equipping a layperson to build valuable software, it doesn’t seem like we’re close.</p>
+          <p>Most aspiring builders seem to get stuck building their MVP. For those who do make it that far, <a href="https://x.com/jasonlk/status/1946069562723897802?ref=implausible.ai">there are new curveballs involved</a> in operating your product. I have to imagine the absence of “My vibe-coded app got hacked!” headlines is because there are few vibe-coded apps worth hacking, and not because they rigorously implement security best practices.</p>
+          <h3 id="what-about-the-ones-selling-the-vibes"><strong>What about the ones selling the vibes?</strong></h3>
+          <p>Meanwhile, operating one of these vibe coding services seems to be a tough business.</p>
+          <p>The Information reported this month that <a href="https://www.theinformation.com/articles/replits-margins-illustrate-high-costs-coding-agents?rc=jngutp&shared=225c42f5bafec0d8&ref=implausible.ai">Replit’s gross margins ranged from 36% to negative 14% this year</a> due to LLM inference costs — in Replit’s case, for Claude and Gemini. Lovable and StackBlitz (creator of Bolt) had margins in the 35-40% range. <a href="https://www.linkedin.com/pulse/how-ai-agents-should-handle-infra-what-we-learned-480k-shamgunov-xma4c/?ref=implausible.ai">Perhaps the whitelabeled infrastructure providers like Supabase and Neon are the players doing the best shovel-selling in this space</a>.</p>
+          <p>But the bigger issue might be the intense competition. Not just with each other, but from ChatGPT, Gemini, and Claude, all of which now support a similar prototyping use case through their increasingly capable built-in tools for generating code (<a href="https://www.figma.com/make/?ref=implausible.ai">not to mention Figma’s new entrant</a>). It’s not impossible to imagine employees one day sharing prototypes and internal tools with each other which were built and deployed without ever leaving ChatGPT.</p>
+          <h3 id="so-where-does-vibe-coding-go-from-here"><strong>So where does vibe coding go from here?</strong></h3>
+          <p>The dream of “equip anyone on Earth to build valuable software” may still be beyond our grasp, and as a founder it hurts to see aspiring entrepreneurs struggle as they try anyway.</p>
+          <p>But I wanted to focus on this topic for my inaugural newsletter because, to me, that dream remains one of the ways things can “go right” for AI. How many products didn’t get built in the past decade because an aspiring founder didn’t have the skills to get started? And within companies, how many times did a great idea die because all an employee could do is file a ticket on a backlog?</p>
+          <p>I’d love to see what the industry looks like when the power to create valuable software is in many more hands than it is today.</p>
+          <h2 id="next-week">Next week</h2>
+          <p>Thanks for reading this week’s issue. What do you think? Just hit reply or send me a note at andrew@implausible.ai.</p>
+          <p>Next week’s issue will be about how professional engineers are using AI coding assistants to scale their work. Subscribe here to get it delivered straight to your inbox.</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

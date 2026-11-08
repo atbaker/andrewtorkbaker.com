@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background: #fff;
+  color: #111827;
+  font: 1.0625rem/1.65 system-ui, sans-serif;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+nav,
+.byline,
+.archive-note,
+figcaption,
+.post-list time {
+  color: #4b5563;
+  font-size: 0.9375rem;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: #1d4ed8;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0.25em 0 0.5em;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+figure {
+  margin: 1.75rem 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #d1d5db;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.post-list time {
+  display: block;
+}

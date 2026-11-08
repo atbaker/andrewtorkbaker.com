@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The state of browser AI agents | Andrew Tork Baker</title>
+    <meta name="description" content="Welcome back!" />
+    <link rel="canonical" href="https://andrewtorkbaker.com/blog/the-state-of-browser-ai-agents/" />
+    <meta property="og:title" content="The state of browser AI agents" />
+    <meta property="og:description" content="Welcome back!" />
+    <meta property="og:url" content="https://andrewtorkbaker.com/blog/the-state-of-browser-ai-agents/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://andrewtorkbaker.com/blog/media/the-state-of-browser-ai-agents-1.png" />
+    <meta property="article:published_time" content="2025-10-06" />
+    <link rel="stylesheet" href="/blog/archive.css" />
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Breadcrumb"><a href="/">Andrew Tork Baker</a> / <a href="/blog/">Blog</a></nav>
+      <article>
+        <header>
+          <p class="byline">Andrew Tork Baker · <time datetime="2025-10-06">October 6, 2025</time></p>
+          <h1>The state of browser AI agents</h1>
+          <p class="archive-note">From the Implausible AI newsletter archive. Signup and reply instructions are historical.</p>
+        </header>
+        <figure>
+        <img
+            src="/blog/media/the-state-of-browser-ai-agents-1.png"
+            width="2000"
+            height="1270"
+            alt="The state of browser AI agents"
+        >
+            <figcaption><span style="white-space:pre-wrap">The Claude for Chrome research preview attempts to help me add a recent flight to an expense report.</span></figcaption>
+    </figure>
+        <div class="post-body">
+          <p>Welcome back!</p>
+          <p>Autumn is off to a busy start in AI-land, not just because of <a href="https://openai.com/index/openai-nvidia-systems-partnership/?ref=implausible.ai">eye-popping headlines</a> around funding and infrastructure. <a href="https://simonwillison.net/2025/Sep/23/gpt-5-codex/?ref=implausible.ai">OpenAI</a> and <a href="https://www.anthropic.com/news/claude-sonnet-4-5?ref=implausible.ai">Anthropic</a> both released notable new models, and rumor has it Google will drop Gemini 3 before long. Alibaba’s also been making moves this month with its <a href="https://www.linkedin.com/posts/artificial-analysis_alibabas-updated-qwen3-max-is-the-most-intelligent-activity-7377468206619295744-2e_4/?ref=implausible.ai">open-weight Qwen models</a>, a favorite of local LLM fans. <a href="https://devday.openai.com/2025?ref=implausible.ai">OpenAI DevDay</a> happened today - check back next week for analysis.</p>
+          <p>One less-publicized update was that Anthropic opened up its browser-based <a href="https://www.anthropic.com/news/claude-for-chrome?ref=implausible.ai">Claude for Chrome</a> preview to more users. I got my hands on it last week. “Uses a browser” might one day become one of the defining characteristics for what makes an LLM an agent. That’s the focus for this week’s deep dive below.</p>
+          <p>My thanks to everyone who subscribed and shared their feedback this month. Not subscribed yet? You can sign up here.</p>
+          <h2 id="andrew’s-picks-🔍">Andrew’s picks 🔍</h2>
+          <p>A handful of insightful links which earned a spot in my notes recently.</p>
+          <h3 id="sora-two-ways">Sora two ways</h3>
+          <p>On the consumer side of AI, OpenAI released Sora 2 (the model) and Sora (the app). Notably, the Sora app makes it easy for users to <a href="https://www.wired.com/story/openai-sora-app-ai-deepfakes-entertainment/?ref=implausible.ai">create videos with their own likeness</a>. You can also share that likeness with other users, so you and your friends can create videos featuring joint escapades without ever leaving your couch.</p>
+          <p>I created a rudimentary app like this a few years ago to share with friends and family as part of an annual tradition where I ship a small hack to go with our Christmas card. That one was based on the <a href="https://replicate.com/blog/dreambooth-api?ref=implausible.ai">DreamBooth</a> project.</p>
+          <p>It took about five minutes for my friends to hone in on the prompt “Andrew at the U.S. Capitol on January 6th.” It was also my most successful Christmas card project by far. It’s hard to say what Sora’s long-term prospects are as a standalone app, but I admire Sam Altman’s personal risk tolerance in sharing his likeness for any user to incorporate into their videos on launch day.</p>
+          <h3 id="claude’s-imagining-things">Claude’s imagining things</h3>
+          <p>As part of the Sonnet 4.5 release, Anthropic also opened up a research preview for a new way to generate software with AI they’re calling “<a href="https://www.youtube.com/watch?v=dGiqrsv530Y&ref=implausible.ai">Imagine with Claude</a>.” Think of it less as a vibe coding platform and more like a “desktop simulator,” where Claude builds each screen and window in realtime, per your direction.</p>
+          <p>In terms of how this technique might be applied, I think it’s more helpful to consider it in the same bucket as <a href="https://gamengen.github.io/?ref=implausible.ai">Google’s GameNGen project</a>, a game engine where each frame is simulated by a neural model.</p>
+          <p>This approach feels out there today, but if it eventually goes mainstream, we’ll look back on all the AI-assisted coding tools of today as misguided attempts to build “faster horses.”</p>
+          <h3 id="we-gonna-rock-down-to-electric-ai-avenue-🎶">We gonna rock down to <s>electric</s> AI Avenue 🎶</h3>
+          <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/blog/media/the-state-of-browser-ai-agents-2.png" class="kg-image" alt="" loading="lazy" width="1762" height="988"><figcaption><span style="white-space: pre-wrap;">AI Avenue host Craig Dennis gets a BeMyEyes demo while grocery shopping with guest Ryan Strunk</span></figcaption></figure>
+          <p>I’m in awe of the polish that went into <a href="https://aiavenue.show/?ref=implausible.ai">this new series about AI</a> from my friend Craig Dennis and the team at Cloudflare. My favorite segment so far is in episode 2, <a href="https://youtu.be/xp4Z_ZqP4Ck?si=-TW6-jH8fI6bVgW_&t=942&ref=implausible.ai">when Craig joins a vision-impaired San Francisco resident as he uses BeMyEyes</a> for the first time while grocery shopping.</p>
+          <p>I had heard a lot about <a href="https://www.bemyeyes.com/?ref=implausible.ai">BeMyEyes</a> - it was a prominent launch partner for OpenAI’s early vision products. But AI Avenue was the first time I actually saw BeMyEyes demoed by a person with a disability out in the real world. Definitely inspiring.</p>
+          <h3 id="kvick-sört">KVICK SÖRT</h3>
+          <p>As an IKEA fan who struggled in his algorithms course during undergrad, I greatly appreciate <a href="https://idea-instructions.com/quick-sort/?ref=implausible.ai">this collection of visual explainers</a> of key computer science concepts. Though my GOAT in this category will always be <a href="https://youtu.be/YEBfamv-_do?si=B7IfTPZ10jgAkPt_&t=135&ref=implausible.ai">this paint-based explanation for public key cryptography</a>.</p>
+          <h2 id="this-week-are-ai-agents-ready-for-the-information-superhighway-🖥️">This week: Are AI agents ready for the information superhighway? 🖥️</h2>
+          <p><a href="/blog/what-a-burnt-marshmallow-taught-me-about-ai-product-market-fit/#%E2%80%9Can-llm-agent-runs-tools-in-a-loop-to-achieve-a-goal%E2%80%9D">Last week I highlighted gathering momentum</a> around a crisper definition for what “AI agent” means: “an LLM agent runs tools in a loop to achieve a goal.”</p>
+          <p><strong>When it comes to making AI agents helpful to knowledge workers, the most important tool an LLM could use might be a web browser.</strong> Research tools like ChatGPT <a href="https://openai.com/index/introducing-deep-research/?ref=implausible.ai">Deep Research</a> are a step towards this vision (which I also find pretty useful today).<strong> </strong>The current frontier, however, is AI agents which can use a browser to reliably accomplish non-research tasks.</p>
+          <p>Historically, the only way to automate repetitive digital tasks was to build custom software - a solution which is neither cheap nor easy. So as any modern corporate denizen knows well, a lot of human time and energy is expended every day moving information from one website to another.</p>
+          <p>Why can’t an AI agent use a browser to do that instead?</p>
+          <h3 id="you-get-a-browser-and-you-get-a-browser">You get a browser! And <em>you</em> get a browser!</h3>
+          <p>Here in 2025, all the major AI players have released research preview / beta products for browser-based AI agents. OpenAI evolved its early “Operator” project into <a href="https://openai.com/index/introducing-chatgpt-agent/?ref=implausible.ai">ChatGPT agent</a> in July. As I mentioned above, Anthropic is expanding access for its <a href="https://www.anthropic.com/news/claude-for-chrome?ref=implausible.ai">Claude for Chrome</a> feature. <a href="https://gemini.google/overview/gemini-in-chrome/?ref=implausible.ai">Google plans to ship Gemini natively within Chrome</a>.</p>
+          <p>There’s also been a flurry of open source activity in this space, with dozens of open source projects which have varied goals and approaches for how to best help an LLM wield a browser. The two I have used most are Browserbase’s <a href="https://www.stagehand.dev/?ref=implausible.ai">Stagehand</a> and <a href="https://browser-use.com/?ref=implausible.ai">Browser Use</a>.</p>
+          <p>So how do these tools work?</p>
+          <p>Generally, they use HTML parsing and/or screenshots plus some clever prompts. The tool then sends that curated context to an off-the-shelf LLM - Gemini 2.5 is a favorite in this community. The LLM responds with either the next instruction for the browser (e.g. “scroll down”, “click ‘submit’”) or that it’s finished with the task (”I’ve added that receipt to your next expense report”).</p>
+          <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/blog/media/the-state-of-browser-ai-agents-3.gif" class="kg-image" alt="" loading="lazy" width="1809" height="851"><figcaption><span style="white-space: pre-wrap;">An LLM does some shopping in this demo from the </span><a href="https://github.com/browser-use/browser-use?ref=implausible.ai"><span style="white-space: pre-wrap;">Browser Use</span></a><span style="white-space: pre-wrap;"> open source project</span></figcaption></figure>
+          <p>Most tools are built on top of <a href="https://en.wikipedia.org/wiki/Playwright_(software)?ref=implausible.ai">Playwright</a>, which is a funny example of a rather humdrum automated testing open source project from Microsoft taking on new relevance in the AI age. <a href="https://playwright.dev/python/docs/writing-tests?ref=implausible.ai#first-test">Here’s the Playwright “hello world” sample code</a> if you’re curious about how these LLMs are actually manipulating a browser.</p>
+          <p>So with no shortage of tools in this space, how ready are they to go to work?</p>
+          <h3 id="what-i-learned-from-my-projects">What I learned from my projects</h3>
+          <p>For most tasks you might dream up, the answer today is: “probably not.” Or at least, not in a way that’s faster, more capable, or less error-prone than a human performing that task themselves.</p>
+          <p>I spent a lot of time in this space last year while building <a href="https://www.youtube.com/watch?v=7MVRLjQ_zyk&ref=implausible.ai">BetterSeat</a>, my consumer AI agent which helped air travelers get the best possible seat on their next flight. I sold that business, but “tell me my current seat assignments and whether there are better seats available” remains my go-to litmus test for browser AI agents. It’s a great task because it’s trivial for humans but tricky for LLMs: behind that seatmap UI is a pretty complex HTML document.</p>
+          <p><strong>Today, none of the latest tools and models come close.</strong> They often get stuck before even reaching the seatmap UI. When they do make it there, they almost always make an error when reporting the available seats for me to choose from. And the whole process is slow - multiples slower than a human giving the task their full attention.</p>
+          <p>Another reason why seat selection is a great use case is because there are somewhat serious ways an LLM could make things worse if it goes off script. That six-character confirmation code does more than just let you print your boarding pass: it’s also all the authentication needed to alter or cancel your flight. So if the AI agent gets confused along the way, there’s a chance it could make a real mess.</p>
+          <p>AI coding agents solve the “unwanted side effect” problem by prompting the engineer to approve every potentially destructive action. Many browser-based AI agents use the same pattern, but the UX of being prompted to approve every screenshot or click is even more tedious than being asked to approve each bash command.</p>
+          <p>And so that’s where most browser AI agent workflows end up today: too error-prone to be used unsupervised, and too slow to be worth supervising.</p>
+          <h3 id="the-other-hurdles-waiting-on-the-horizon">The other hurdles waiting on the horizon</h3>
+          <p>So what will it take for browser AI agents to gain broad adoption?</p>
+          <p>We can probably count on future improvements in the tools and their underlying models to solve the speed and capability issues. But that might just open a new can of worms.</p>
+          <p>One of those worms is security. Last week’s newsletter included a link to <a href="/blog/what-a-burnt-marshmallow-taught-me-about-ai-product-market-fit/#what-if-the-agents-goal-is-someone-elses-goal">a zero-click vulnerability in ChatGPT</a> which misled the LLM based on malicious instructions it uncovered during a Deep Research session (since patched). It won’t be easy to solve the inherent tension between keeping LLMs helpful and obedient when receiving instructions from legitimate users but obstinate when faced with new instructions from bad actors.</p>
+          <p><strong>After that, though, the next biggest hurdle might be an economic one.</strong> Not the cost of operating these browser agents - that cost is non-trivial today, but is much less expensive than last year. In fact, <a href="https://www.perplexity.ai/hub/blog/comet-is-now-available-to-everyone-worldwide?ref=implausible.ai">Perplexity just released their AI-enhanced browser, Comet, as a freemium product</a> - no doubt partly due to improving operating costs. The economic hurdle I’m talking about is the foundation of the web: advertising.</p>
+          <p>I think often about the quote from an executive in <a href="https://www.theinformation.com/articles/openais-agents-pose-risks-doordash-consumer-apps?rc=jngutp&shared=f8e07cb035dfb830&ref=implausible.ai">this March article from The Information about DoorDash's role as a partner</a> on OpenAI’s Operator launch:</p>
+          <blockquote>In a meeting last fall between the companies, a DoorDash executive asked OpenAI managers to “take this to its logical limit,” according to someone who attended the meeting. If only AI bots rather than people visit the DoorDash site, that wouldn’t be so great for DoorDash’s business, the executive said.</blockquote>
+          <p>Most of the web is built upon the premise that human eyeballs are on the other side of the screen. Google search and social media are the first things that come to mind when you think about the ad-supported web, but ads are propping up margins almost everywhere these days - including inside apps like DoorDash (who went ahead with the partnership anyway).</p>
+          <p>In the future, will some companies block browser-using AI agents, either via legal or technical means, in order to preserve their advertising revenue? Will OpenAI or Google manually block certain sites from their consumer agents so they can avoid upsetting their corporate customers?</p>
+          <p>Or things could go the other way: will some sites come to prefer traffic from ChatGPT and other AI agents because they’re an easier audience to sell to than a human consumer? Truly egregious examples would likely get named and shamed, but it’s not hard to imagine AI agent-based commerce becoming a lucrative new medium for <a href="https://www.investopedia.com/terms/p/price_discrimination.asp?ref=implausible.ai">price discrimination</a>.</p>
+          <h3 id="try-it-yourself">Try it yourself</h3>
+          <p>I’d love to hear about your experience using browser AI agents. What’s your go-to use case?</p>
+          <p>If you’re looking for tools to try, here’s the list I recommend these days:</p>
+          <ul><li><a href="https://openai.com/index/introducing-chatgpt-agent/?ref=implausible.ai"><strong>ChatGPT agent</strong></a> - The easiest place to start. Runs entirely within ChatGPT - no browser required.</li><li><a href="https://www.anthropic.com/news/claude-for-chrome?ref=implausible.ai"><strong>Claude for Chrome</strong></a> - Still gated by a waitlist today, but I believe all Claude Max subscribers get off the waitlist quickly. Runs in your own browser via an extension - one solution to the authentication problem</li><li><a href="https://www.director.ai/?ref=implausible.ai"><strong>Browserbase Director</strong></a> - Thinking of incorporating an LLM-powered browser automation feature into your own project? This one's great for quickly evaluating how well the latest tooling and models support your use case</li><li><a href="https://vercept.com/?ref=implausible.ai"><strong>Vy</strong></a> - An entrant in the different but related category of full computer use agents. Vy runs on your desktop, not in your browser. Based on my brief experience, I’d say this approach ups the risk factors without providing meaningful additional value.</li></ul>
+          <p>I’ll be back next week to talk about OpenAI DevDay and maybe even MCP, too. Subscribe here to get the next issue delivered straight to your inbox.</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
